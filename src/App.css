@@ -1,38 +1,109 @@
-.App {
+/* Styling for hovedcontaineren, der indeholder hele applikationen */
+.Container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly; /* Centrerer elementerne horisontalt */
+  align-items: center; /* Centrerer elementerne vertikalt */
+  justify-content: row; /* Dette attribut har ingen effekt, fjernet for at undgå forvirring */
+  background-color: #f8fbff; /* Baggrundsfarve for containeren */
+}
+
+/* Styling for info-boksen */
+.InfoBox {
+  display: flex;
+  justify-content: center; /* Centrerer elementerne horisontalt */
+  align-items: center; /* Centrerer elementerne vertikalt */
+  width: 10%;
+  height: 10vh;
+  border: 1px solid black;
+  text-align: center; /* Centrerer teksten inden i boksen */
+}
+
+/* Styling for listen af film */
+.List {
+  display: flex;
+  justify-content: start; /* Justerer elementerne til venstre */
+  align-items: center;
+  width: 40%;
+  height: 60vh;
+  border: 1px solid black;
+  text-align: center;
+  flex-direction: column; /* Elementerne er organiseret i en kolonne */
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; /* Skyggeeffekt */
+  border-radius: 4px;
+  overflow: auto; /* Tillader rulleliste, hvis indholdet er større end beholderen */
+}
+
+/* Styling for individuelle elementer i listen */
+.ListElement {
+  width: 100%;
+  margin: 2%;
+  border: 2px solid grey;
+}
+
+/* Styling for elementer i en dictionary-lignende struktur i listen */
+.DictListElement {
+  display: flex;
+  width: 100%;
+  margin: 2%;
+  border: 2px solid grey;
+  flex-direction: row; /* Elementerne er organiseret i en række */
+}
+
+/* Styling for centerjusterede elementer i en dictionary-lignende struktur */
+.DictItemCenter {
+  width: 22.5%;
+  margin: 2%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for centerjusterede elementer med længere bredde i en dictionary-lignende struktur */
+.DictItemCenterLong {
+  width: 30%;
+  margin: 2%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Styling for centerjusterede elementer med kortere bredde i en dictionary-lignende struktur */
+.DictItemCenterShort {
+  width: 10%;
+  margin: 2%;
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Styling for overskriften i applikationen */
+.HeaderText {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  width: 100%;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  border-bottom: 1px solid black;
+  height: 60px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5%;
+  background-color: #61a4ad;
   color: white;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Styling for input-boksen til at tilføje nye film */
+.InputBox {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-self: baseline;
+  width: 30%;
+  height: 40vh;
+  border: 1px solid black;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 4px;
 }
