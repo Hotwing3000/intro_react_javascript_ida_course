@@ -14,9 +14,17 @@ function App() {
   useEffect(() => {
 
     const getMovies = async () => {
+      /*
       const response = await fetch("https://javascriptdb-46f88-default-rtdb.europe-west1.firebasedatabase.app/movies.json")
       const data = await response.json()
       setMovies(data)
+      */
+      const dummpyMovies = [
+        {"title": "Shawshank Redemption", "rating": 10, "genre": "Drama"},
+        {"title": "Min søsters børn", "rating": 6, "genre": "Komedie"},
+        {'title': "Inglorious Bastards", "rating": 10, "genre": "Action"}
+      ]
+      setMovies(dummpyMovies)
     }
     getMovies()
   }, [])
