@@ -81,5 +81,5 @@ function App() {
   )
 }
 
-// Eksporterer App-komponenten som standard eksport
+// Eksporterer App-komponenten som standard eksport.
 export default App
