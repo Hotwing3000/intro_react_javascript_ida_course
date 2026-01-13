@@ -19,7 +19,7 @@ function App() {
       setMovies(data)
     }
     getMovies()
-  })
+  }, [])
 /*
   [
     {"title": "Shawshank Redemption", "rating": 10, "genre": "Drama"},
