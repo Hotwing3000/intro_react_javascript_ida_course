@@ -121,3 +121,40 @@
   align-self: end;
   font-weight: 600;
 }
+
+/* Styles for AddMovie component */
+.input-section {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  width: 90%;
+  flex-direction: column;
+}
+
+.input-field {
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  margin: 5%;
+}
+
+.input-wide {
+  width: 60%;
+}
+
+.input-narrow {
+  width: 25%;
+}
+
+.add-movie-btn {
+  width: 50%;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 5%;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  background-color: #61a4ad;
+  color: white;
+}
