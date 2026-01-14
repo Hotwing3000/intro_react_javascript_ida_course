@@ -14,7 +14,7 @@ function App() {
     <div className="Container">
       <AddMovie title={title} setTitle={setTitle} rating={rating} setRating={setRating} genre={genre} setGenre={setGenre} movies={movies} setMovies={setMovies} addMovie={addMovie}/>
       <MovieRatings title={title} setTitle={setTitle} rating={rating} setRating={setRating} genre={genre} setGenre={setGenre} movies={movies} updateMovies={updateMovies}/>
-
+      <Navbar />
     </div>
   )
 }
