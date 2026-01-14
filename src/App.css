@@ -1,78 +1,78 @@
-/* Styling for hovedcontaineren, der indeholder hele applikationen */
+/* Styling for the main container that contains the entire application */
 .Container {
   min-height: 100vh;
   display: flex;
-  justify-content: space-evenly; /* Centrerer elementerne horisontalt */
-  align-items: center; /* Centrerer elementerne vertikalt */
-  justify-content: row; /* Dette attribut har ingen effekt, fjernet for at undgå forvirring */
-  background-color: #f8fbff; /* Baggrundsfarve for containeren */
+  justify-content: space-evenly; /* Centers elements horizontally */
+  align-items: center; /* Centers elements vertically */
+  justify-content: row; /* This attribute has no effect, removed to avoid confusion */
+  background-color: #f8fbff; /* Background color for the container */
 }
 
-/* Styling for info-boksen */
+/* Styling for the info box */
 .InfoBox {
   display: flex;
-  justify-content: center; /* Centrerer elementerne horisontalt */
-  align-items: center; /* Centrerer elementerne vertikalt */
+  justify-content: center; /* Centers elements horizontally */
+  align-items: center; /* Centers elements vertically */
   width: 10%;
   height: 10vh;
   border: 1px solid black;
-  text-align: center; /* Centrerer teksten inden i boksen */
+  text-align: center; /* Centers the text inside the box */
 }
 
-/* Styling for listen af film */
+/* Styling for the list of movies */
 .List {
   display: flex;
-  justify-content: start; /* Justerer elementerne til venstre */
+  justify-content: start; /* Aligns elements to the left */
   align-items: center;
   width: 40%;
   height: 60vh;
   border: 1px solid black;
   text-align: center;
-  flex-direction: column; /* Elementerne er organiseret i en kolonne */
+  flex-direction: column; /* Elements are organized in a column */
   background-color: white;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; /* Skyggeeffekt */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; /* Shadow effect */
   border-radius: 4px;
-  overflow: auto; /* Tillader rulleliste, hvis indholdet er større end beholderen */
+  overflow: auto; /* Allows scrolling if content is larger than the container */
 }
 
-/* Styling for individuelle elementer i listen */
+/* Styling for individual elements in the list */
 .ListElement {
   width: 100%;
   margin: 2%;
   border: 2px solid grey;
 }
 
-/* Styling for elementer i en dictionary-lignende struktur i listen */
+/* Styling for elements in a dictionary-like structure in the list */
 .DictListElement {
   display: flex;
   width: 100%;
   margin: 2%;
   border: 2px solid grey;
-  flex-direction: row; /* Elementerne er organiseret i en række */
+  flex-direction: row; /* Elements are organized in a row */
 }
 
-/* Styling for centerjusterede elementer i en dictionary-lignende struktur */
-.DictItemCenter {
+/* Styling for center-aligned elements in a dictionary-like structure */
+.DictItemCenterMedium {
   width: 22.5%;
   margin: 2%;
   text-align: center;
 }
 
-/* Styling for centerjusterede elementer med længere bredde i en dictionary-lignende struktur */
+/* Styling for center-aligned elements with longer width in a dictionary-like structure */
 .DictItemCenterLong {
   width: 30%;
   margin: 2%;
   text-align: center;
 }
 
-/* Styling for centerjusterede elementer med kortere bredde i en dictionary-lignende struktur */
+/* Styling for center-aligned elements with shorter width in a dictionary-like structure */
 .DictItemCenterShort {
   width: 10%;
   margin: 2%;
   text-align: center;
 }
 
-/* Styling for overskriften i applikationen */
+/* Styling for the header in the application */
 .HeaderText {
   display: flex;
   justify-content: center;
@@ -91,7 +91,7 @@
   border-top-right-radius: 2px;
 }
 
-/* Styling for input-boksen til at tilføje nye film */
+/* Styling for the input box to add new movies */
 .InputBox {
   margin-top: 20vh;
   display: flex;
@@ -106,4 +106,18 @@
   background-color: white;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   border-radius: 4px;
+}
+
+/* Styling for each movie row */
+.movie-row {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  justify-content: space-around;
+}
+
+.header-item {
+  align-self: end;
+  font-weight: 600;
 }
