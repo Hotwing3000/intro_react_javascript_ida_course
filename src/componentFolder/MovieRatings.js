@@ -1,9 +1,11 @@
+import "./MovieRatings.css"
+
 function MovieRatings ({ title, setTitle, rating, setRating, genre, setGenre, movies, updateMovies}) {
 
 
     return (
 
-      <div className="List"> {/* List section to display existing movies */}
+      <div className="MovieList"> {/* List section to display existing movies */}
         <div className="HeaderText">Movies & Ratings</div>
         <div className="movie-row">
           <div className="DictItemCenterLong header-item">Title</div>

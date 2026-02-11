@@ -1,0 +1,57 @@
+/* Header text in App.css */
+
+
+/* Styling for the input box to add new movies */
+.InputBox {
+  margin-top: 20vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  align-self: baseline;
+  width: 30%;
+  height: 40vh;
+  border: 1px solid black;
+  text-align: center;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  border-radius: 4px;
+}
+
+
+/* Styles for AddMovie component */
+.input-section {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+  width: 90%;
+  flex-direction: column;
+}
+
+.input-field {
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  margin: 5%;
+}
+
+.input-wide {
+  width: 60%;
+}
+
+.input-narrow {
+  width: 25%;
+}
+.add-movie-btn {
+  width: 50%;
+  height: 40px;
+  border: 1px solid black;
+  font-size: 15px;
+  margin: 5%;
+  justify-items: center;
+  align-items: center;
+  align-self: center;
+  background-color: #61a4ad;
+  color: white;
+}
+

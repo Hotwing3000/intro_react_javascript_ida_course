@@ -6,69 +6,15 @@
   background-color: #f8fbff; /* Background color for the container */
 }
 
-/* Styling for the info box */
-.InfoBox {
-  display: flex;
-  justify-content: center; /* Centers elements horizontally */
-  align-items: center; /* Centers elements vertically */
-  width: 10%;
-  height: 10vh;
-  border: 1px solid black;
-  text-align: center; /* Centers the text inside the box */
-}
 
-/* Styling for the list of movies */
-.List {
+/* Content row for AddMovie and MovieRatings */
+.content-row {
   display: flex;
-  justify-content: start; /* Aligns elements to the left */
+  justify-content: space-evenly;
   align-items: center;
-  width: 40%;
-  height: 60vh;
-  border: 1px solid black;
-  text-align: center;
-  flex-direction: column; /* Elements are organized in a column */
-  background-color: white;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; /* Shadow effect */
-  border-radius: 4px;
-  overflow: auto; /* Allows scrolling if content is larger than the container */
+  flex: 1; /* Takes remaining space */
 }
 
-/* Styling for individual elements in the list */
-.ListElement {
-  width: 100%;
-  margin: 2%;
-  border: 2px solid grey;
-}
-
-/* Styling for elements in a dictionary-like structure in the list */
-.DictListElement {
-  display: flex;
-  width: 100%;
-  margin: 2%;
-  border: 2px solid grey;
-  flex-direction: row; /* Elements are organized in a row */
-}
-
-/* Styling for center-aligned elements in a dictionary-like structure */
-.DictItemCenterMedium {
-  width: 22.5%;
-  margin: 2%;
-  text-align: center;
-}
-
-/* Styling for center-aligned elements with longer width in a dictionary-like structure */
-.DictItemCenterLong {
-  width: 30%;
-  margin: 2%;
-  text-align: center;
-}
-
-/* Styling for center-aligned elements with shorter width in a dictionary-like structure */
-.DictItemCenterShort {
-  width: 10%;
-  margin: 2%;
-  text-align: center;
-}
 
 /* Styling for the header in the application */
 .HeaderText {
@@ -87,93 +33,4 @@
   color: white;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-}
-
-/* Styling for the input box to add new movies */
-.InputBox {
-  margin-top: 20vh;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  align-self: baseline;
-  width: 30%;
-  height: 40vh;
-  border: 1px solid black;
-  text-align: center;
-  flex-direction: column;
-  background-color: white;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  border-radius: 4px;
-}
-
-/* Styling for each movie row */
-.movie-row {
-  display: flex;
-  height: 10%;
-  width: 100%;
-  border-bottom: 1px solid black;
-  justify-content: space-around;
-}
-
-.header-item {
-  align-self: end;
-  font-weight: 600;
-}
-
-/* Styles for AddMovie component */
-.input-section {
-  display: flex;
-  justify-content: start;
-  align-items: baseline;
-  width: 90%;
-  flex-direction: column;
-}
-
-.input-field {
-  border: none;
-  border-bottom: 1px solid black;
-  font-size: 15px;
-  margin: 5%;
-}
-
-.input-wide {
-  width: 60%;
-}
-
-.input-narrow {
-  width: 25%;
-}
-
-.add-movie-btn {
-  width: 50%;
-  height: 40px;
-  border: 1px solid black;
-  font-size: 15px;
-  margin: 5%;
-  justify-items: center;
-  align-items: center;
-  align-self: center;
-  background-color: #61a4ad;
-  color: white;
-}
-
-/* Navbar styling */
-.Navbar {
-  width: 100%;
-  height: 60px;
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* Content row for AddMovie and MovieRatings */
-.content-row {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex: 1; /* Takes remaining space */
 }

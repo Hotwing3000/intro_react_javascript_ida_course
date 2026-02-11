@@ -1,3 +1,5 @@
+import "./AddMovie.css"
+
 function AddMovie ({ title, setTitle, rating, setRating, genre, setGenre, movies, setMovies, addMovie }) {
   
   return (

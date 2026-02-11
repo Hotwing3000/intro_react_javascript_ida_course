@@ -1,0 +1,55 @@
+/* Header text in App.css */
+
+
+/* Styling for the list of movies */
+.MovieList {
+  display: flex;
+  justify-content: start; /* Aligns elements to the left */
+  align-items: center;
+  width: 40%;
+  height: 60vh;
+  border: 1px solid black;
+  text-align: center;
+  flex-direction: column; /* Elements are organized in a column */
+  background-color: white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; /* Shadow effect */
+  border-radius: 4px;
+  overflow: auto; /* Allows scrolling if content is larger than the container */
+}
+
+
+/* Styling for each movie row */
+.movie-row {
+  display: flex;
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  justify-content: space-around;
+}
+
+.header-item {
+  align-self: end;
+  font-weight: 600;
+}
+
+
+/* Styling for center-aligned elements in a dictionary-like structure */
+.DictItemCenterMedium {
+  width: 22.5%;
+  margin: 2%;
+  text-align: center;
+}
+
+/* Styling for center-aligned elements with longer width in a dictionary-like structure */
+.DictItemCenterLong {
+  width: 30%;
+  margin: 2%;
+  text-align: center;
+}
+
+/* Styling for center-aligned elements with shorter width in a dictionary-like structure */
+.DictItemCenterShort {
+  width: 10%;
+  margin: 2%;
+  text-align: center;
+}
