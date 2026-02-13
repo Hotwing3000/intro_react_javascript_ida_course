@@ -5,13 +5,13 @@ import { getDatabase } from "firebase/database"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBctpZqoIaTlr3icvYXj83BdA8iVTpded8", // can be public? normally should be hidden, but since firebase use auth rules, it can be public
-  authDomain: "javascriptdb-46f88.firebaseapp.com",
-  databaseURL: "https://javascriptdb-46f88-default-rtdb.europe-west1.firebasedatabase.app",
-  projectId: "javascriptdb-46f88",
-  storageBucket: "javascriptdb-46f88.firebasestorage.app", // can delete
-  messagingSenderId: "556068433670", // can delete
-  appId: "1:556068433670:web:bc8bbc18a6b8b359c77887"
+  apiKey: process.env.REACT_APP_API_KEY, // can be public? normally should be hidden, but since firebase use auth rules, it can be public
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET, // not needed for now
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID, // not needed for now
+  appId: process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase
