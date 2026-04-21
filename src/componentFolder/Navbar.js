@@ -1,11 +1,12 @@
 import "./Navbar.css"
+import BurgerDropdownMenu from "./BurgerDropdownMenu"
 
 function Navbar () {
     return (
       <div className="Navbar">
-        <div className="NavbarLogo"> some logo</div>
+        <div className="DropdownMenu"><BurgerDropdownMenu /></div>
+        <div className="NavbarLogo"> asdsa</div>
         <div className="NavbarText">Movie Ratings</div>
-        <div className="DropdownMenu">dropdown menu</div>
       </div>
     )
   }
